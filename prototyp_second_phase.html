@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Studenten Homepage</title>
+    <style>
+        body {
+            font-family: Segoe UI, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .banner {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 24px;
+        }
+
+        .main-buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: 80%;
+        }
+
+        .main-buttons div {
+            display: flex;
+            width: 100%;
+            padding: 20px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            text-align: left;
+            align-items: center;
+            text-decoration: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .main-buttons img {
+            width: 25%;
+            margin-right: 5%;
+        }
+
+        .button-shell {
+            background-image: url("images/svgexport-2.png");
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            padding: 100em;
+        }
+
+        .button-shell img {
+            max-width: 6em;
+            max-height: 6em;
+        }
+
+        .button-shell h1 {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .other-buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 66%;
+            margin-top: 20px;
+        }
+
+        .other-buttons button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">Studenten Homepage</div>
+
+    <div class="main-buttons">
+        <div class="button-shell"><img src="images/Aulis_Logo.png">
+            <h1>Aulis</h1>
+        </div>
+        <div class="button-shell"><img src="images/Webmail_Logo.png">
+            <h1>Webmail</h1>
+        </div>
+        <div class="button-shell"><img src="images/Campino_Logo.png">
+            <h1>Campino</h1>
+        </div>
+        <div class="button-shell"><img src="images/HSB_Logo.png">
+            <h1>Hochschule Bremen</h1>
+        </div>
+    </div>
+    <!--
+  <div class="other-buttons">
+    <button>Small Button 1</button>
+    <button>Small Button 2</button>
+    <button>Small Button 3</button>
+  </div>
+-->
+</body>
+
+</html>

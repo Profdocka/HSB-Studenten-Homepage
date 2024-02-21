@@ -1,0 +1,143 @@
+body {
+    font-family: Segoe UI, sans-serif;
+    color: white;
+    margin: 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.banner {
+    width: 98%;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 0 0.1em rgb(0, 0, 0);
+}
+
+.grid-container {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-flow: column;
+    grid-template-areas:
+    "small1 small2 main1 main1 main1 main1 big1 big1"
+    "small3 small4 main2 main2 main2 main2 big1 big1"
+    "small5 small6 main3 main3 main3 main3 big2 big2"
+    "small7 small8 main4 main4 main4 main4 big2 big2";
+    width: 90%;
+}
+
+@media screen and (max-width: 768px)  {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+         "main1 main1"
+         "main2 main2"
+         "main3 main3"
+         "main4 main4"
+         "big1 big2"
+         "big1 big2"
+         "small1 small2"
+         "small3 small4"
+         "small5 small6"
+         "small7 small8";
+    }
+}
+
+.grid-item {
+    background-image: url("images/svgexport-2.png");
+    padding: 1.3em;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 1em;
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 0 0.1em rgb(0, 0, 0);
+}
+
+.grid-item img{
+    object-fit: contain;
+}
+
+.grid-item:hover {
+    scale: 1.05;
+    cursor: pointer;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0), 0 0 0.5em rgb(0, 0, 0);
+}
+
+.grid-main-item-1 {
+    grid-area: main1;
+}
+
+.grid-main-item-1 img {
+    scale: 1;
+}
+
+.grid-main-item-2 {
+    grid-area: main2;
+}
+
+.grid-main-item-3 {
+    grid-area: main3;
+}
+
+.grid-main-item-3 img {
+    scale: 0.8;
+}
+
+.grid-main-item-4 {
+    grid-area: main4;
+}
+
+.grid-main-item-4 img {
+    scale: 0.8;
+}
+
+.grid-big-item-1 {
+    grid-area: big1;
+}
+
+.grid-big-item-2 {
+    grid-area: big2;
+}
+
+.grid-small-item-1 {
+    grid-area: small1;
+}
+
+.grid-small-item-2 {
+    grid-area: small2;
+}
+
+.grid-small-item-3 {
+    grid-area: small3;
+}
+
+.grid-small-item-4 {
+    grid-area: small4;
+}
+
+.grid-small-item-5 {
+    grid-area: small5;
+}
+
+.grid-small-item-6 {
+    grid-area: small6;
+}
+
+.grid-small-item-7 {
+    grid-area: small7;
+}
+
+.grid-small-item-8 {
+    grid-area: small8;
+}
+
+
+
